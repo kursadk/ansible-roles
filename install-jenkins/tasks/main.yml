@@ -1,0 +1,12 @@
+---
+# tasks file for install-jenkins
+
+  - name: Download Jenkins War File
+    become: true
+    get_url:
+      url: "{{download_url}}"
+      dest: "{{jenkins_war}}"
+
+  - name: Start Jenkins Server
+    shell: "nohup java -jar {{jenkins_war}}  2>&1 &"
+

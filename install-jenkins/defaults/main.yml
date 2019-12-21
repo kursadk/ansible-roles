@@ -1,0 +1,6 @@
+---
+# defaults file for install-jenkins
+#
+
+download_url: http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+jenkins_war: /opt/jenkins.war
